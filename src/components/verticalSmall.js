@@ -1,11 +1,10 @@
 import React from "react";
-import Card from "@mui/material/Card";
+import { Card } from "@mui/material";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import HistoryIcon from "@mui/icons-material/History";
 import PeopleOutlineOutlinedIcon from "@mui/icons-material/PeopleOutlineOutlined";
 import FolderOpenOutlinedIcon from "@mui/icons-material/FolderOpenOutlined";
 import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
-import { Box } from "@mui/material";
 import {
   List,
   ListItem,
@@ -13,49 +12,42 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
+import { Box } from "@mui/material";
 
-const HorizontalComp2 = () => {
+const VerticalSmall = () => {
   return (
     <div>
       <Box sx={{ display: "flex" }}>
         <Card
           sx={{
-            background: "rgba(255, 255, 255,255 )",
+            background: "rgba(255, 255, 255, 255 )",
             display: "flex",
-            flexDirection: "column",
-            width: 200,
+            width: 94,
             height: 440,
             marginTop: 1,
+            flexDirection: "column",
             borderRadius: 3,
             padding: 1,
-            ml: 7,
-            mb: 30,
             border: "solid",
-            borderColor: "rgba(255, 255, 255, 0.6 )",
+            borderColor: "rgba(255, 255, 255, 0.2 )",
             justifyContent: "space-between",
-            mb: 5,
+            ml: 3,
+            mb: 6,
           }}
         >
-          <List
-            sx={{
-              background: "rgba(224, 100, 9, 1 )",
-              borderRadius: 2,
-            }}
-          >
+          <List>
             <ListItem>
               <ListItemButton>
                 <ListItemIcon>
                   <HomeOutlinedIcon
-                    sx={{ width: 35, height: 35, color: "white" }}
-                  />
-                  <ListItemText
                     sx={{
-                      mt: 1.5,
-                      ml: 2,
-                      color: "white",
+                      bgcolor: "rgba(224, 100, 9, 1 )",
+                      height: 55,
+                      width: 42,
+                      borderRadius: 2,
                     }}
-                    primary="Home"
                   />
+                  <ListItemText />
                 </ListItemIcon>
               </ListItemButton>
             </ListItem>
@@ -64,16 +56,8 @@ const HorizontalComp2 = () => {
             <ListItem>
               <ListItemButton>
                 <ListItemIcon>
-                  <HistoryIcon sx={{ width: 35, height: 35 }} />
-                  <ListItemText
-                    sx={{
-                      mt: 1.5,
-                      ml: 2,
-                      width: 50,
-                      height: 35,
-                    }}
-                    primary="History"
-                  />
+                  <HistoryIcon />
+                  <ListItemText />
                 </ListItemIcon>
               </ListItemButton>
             </ListItem>
@@ -82,14 +66,8 @@ const HorizontalComp2 = () => {
             <ListItem>
               <ListItemButton>
                 <ListItemIcon>
-                  <PeopleOutlineOutlinedIcon sx={{ width: 35, height: 35 }} />
-                  <ListItemText
-                    sx={{
-                      mt: 1.5,
-                      ml: 2,
-                    }}
-                    primary="User"
-                  />
+                  <PeopleOutlineOutlinedIcon />
+                  <ListItemText />
                 </ListItemIcon>
               </ListItemButton>
             </ListItem>
@@ -98,14 +76,8 @@ const HorizontalComp2 = () => {
             <ListItem>
               <ListItemButton>
                 <ListItemIcon>
-                  <FolderOpenOutlinedIcon sx={{ width: 35, height: 35 }} />
-                  <ListItemText
-                    sx={{
-                      mt: 1.5,
-                      ml: 2,
-                    }}
-                    primary="Folder"
-                  />
+                  <FolderOpenOutlinedIcon />
+                  <ListItemText />
                 </ListItemIcon>
               </ListItemButton>
             </ListItem>
@@ -114,14 +86,8 @@ const HorizontalComp2 = () => {
             <ListItem>
               <ListItemButton>
                 <ListItemIcon>
-                  <BookmarkBorderOutlinedIcon sx={{ width: 35, height: 35 }} />
-                  <ListItemText
-                    sx={{
-                      mt: 1.5,
-                      ml: 2,
-                    }}
-                    primary="Bookmark"
-                  />
+                  <BookmarkBorderOutlinedIcon />
+                  <ListItemText />
                 </ListItemIcon>
               </ListItemButton>
             </ListItem>
@@ -132,4 +98,4 @@ const HorizontalComp2 = () => {
   );
 };
 
-export default HorizontalComp2;
+export default VerticalSmall;
